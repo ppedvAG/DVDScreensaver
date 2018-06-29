@@ -31,14 +31,14 @@ namespace DVDScreensaver
 
             if (button1.Right >= ClientRectangle.Width || button1.Left <= 0)
             {
-                button1.BackColor = Color.FromArgb(ran.Next(0, 256), ran.Next(0, 256), ran.Next(0, 256));
+                //button1.BackColor = Color.FromArgb(ran.Next(0, 256), ran.Next(0, 256), ran.Next(0, 256));
                 speedX *= -1;
                 Task.Run(() => Console.Beep());
             }
 
             if (button1.Bottom >= ClientRectangle.Height || button1.Top <= 0)
             {
-                button1.BackColor = Color.FromArgb(ran.Next(0, 256), ran.Next(0, 256), ran.Next(0, 256));
+                //button1.BackColor = Color.FromArgb(ran.Next(0, 256), ran.Next(0, 256), ran.Next(0, 256));
                 speedY *= -1;
                 Task.Run(() => Console.Beep());
             }
